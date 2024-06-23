@@ -93,3 +93,21 @@ class AudioFile(WorkFile):
 
     def convert(self):
         pass
+
+class RemoteFile(WorkFile):
+
+    def __init__(self, author, name, size, create_date, path):
+        super().__init__(author, name, size, create_date)
+        self.path = path
+
+    def create(self):
+        pass
+
+    def update(self):
+        pass
+
+    def delete(self):
+        pass
+
+    def convert(self):
+        pass
