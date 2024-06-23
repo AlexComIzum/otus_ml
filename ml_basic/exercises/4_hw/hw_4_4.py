@@ -1,5 +1,5 @@
 
-alfavit_EU =  'ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ'
+alfavit_EU = 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
 
 # Алгоритм для шифрования сообщения на английском
 def encrypt(message: str, step: int):
@@ -27,7 +27,7 @@ def decrypt(message: str, step: int):
     return result
 
 step = int(input('Шаг шифровки: '))
-message = input("Сообщение для шифровки: ").upper()
+message = input("Сообщение для шифровки: ")
 
 encrypt_result = encrypt(message, step)
 
